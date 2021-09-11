@@ -1,37 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:wght@400;600&display=swap");
+
 html,
 body {
-	height: 100%;
 	margin: 0;
 	padding: 0;
 }
 
 body {
+	background-color: #f5f5f5;
+	font-family: "Open Sans", sans-serif;
+	font-size: 13pt;
+}
+
+.header {
+	color: #f5f5f5;
 	background-color: #2c6395;
+	padding: 5px 0;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: bold;
+	font-size: 30pt;
+}
+
+.header a {
+	color: #f5f5f5;
+	text-decoration: none;
 }
 
 .container {
 	position: relative;
-	height: 100%;
-	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
 }
 
-@keyframes floating {
-	0% {
-		transform: scale(0.45);
-	}
-	100% {
-		transform: scale(0.55);
-	}
+h1,
+h2,
+h3 {
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: normal;
 }
 
-.logo {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-
-	transform: scale(0.5);
-	animation: floating 1s ease-in-out alternate infinite;
+.title {
+	font-size: 25pt;
+	border-bottom: #cacaca solid 2px;
 }
